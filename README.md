@@ -6,6 +6,10 @@ dockerでlamp環境構築（勉強用）
 ## Goal
 - `docker-compose up -d`でlamp環境が作成できるようにする。
     - docker-compose.ymlを書く
+        - ~~apacheが起動する~~
+        - ~~phpが使えるようにする~~
+        - mysqlが起動するようにする
+        - phpからmysqlに接続可能にする
 - コンテナを削除してもデータが消えないように永続化する。
     - data volumeを使用して永続化
     - data volume conainerを使用して永続化
