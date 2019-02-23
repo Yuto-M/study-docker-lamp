@@ -29,3 +29,6 @@ https://weblabo.oscasierra.net/centos7-php72-install/
 
 remiレポジトリからphpを取得する際のyumコマンドの説明
 https://akamist.com/blog/archives/648
+
+composerのhomeディレクトリとは
+https://getcomposer.org/doc/03-cli.md#composer-home
