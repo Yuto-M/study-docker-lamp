@@ -9,3 +9,5 @@ cat /etc/httpd/conf/httpd.conf > /var/www/html/apache.conf
 ```
 laravel new lara-d
 ```
+
+## apache.conf書き換え
