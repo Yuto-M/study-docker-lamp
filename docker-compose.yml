@@ -8,5 +8,18 @@ services:
             - 8888:80
         # privileged: true
         volumes:
-            - "./:/var/www/html"
+            - "./lara-d/:/var/www/html"
+            - "./apache-php/apache.conf:/etc/httpd/conf/httpd.conf"
         container_name: "apache-php"
+    db:
+        image: mysql:5.7
+        env_file: .docker-env
+        container_name: "mysql5.7"
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin:latest
+        links:
+            - db
+        ports:
+            - 8889:80
+        env_file: .docker-env
+        container_name: "phpmyamin_la"
