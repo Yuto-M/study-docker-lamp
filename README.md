@@ -17,14 +17,14 @@ dockerでlamp環境構築（勉強用）
     - ホストマシンのディレクトリとマウントしている、data volume containerをマウントしたコンテナを立ち上げて、そこでtarでbackupを固めてだす（backupの取得）。
     - そのあと、そのbackupを使用してdata volume containerを立ち上げてそのcontainerにマウントする。
 - phpMyAdminが使用できるようにする
-- phpのversionを7系にする
+- ~~phpのversionを7系にする~~
 
 
 ## 参考にした
 元ネタ
 https://qiita.com/ProjectEuropa/items/5fbb00848cd8d5b57182#dockerfile%E3%81%AE%E8%A8%98%E8%BF%B0
 
-remiやEPELレポジトリの説明
+remiやEPELレポジトリの説明  
 https://weblabo.oscasierra.net/centos7-php72-install/
 
 remiレポジトリからphpを取得する際のyumコマンドの説明
