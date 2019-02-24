@@ -15,6 +15,8 @@ services:
         image: mysql:5.7
         env_file: .docker-env
         container_name: "mysql5.7"
+        volumes:
+          - lamp_db:/var/lib/mysql
     phpmyadmin:
         image: phpmyadmin/phpmyadmin:latest
         links:
@@ -23,3 +25,6 @@ services:
             - 8889:80
         env_file: .docker-env
         container_name: "phpmyamin_la"
+
+volumes:
+  lamp_db:
