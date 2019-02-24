@@ -16,4 +16,5 @@ laravel new lara-d
 ```
 chmod -R 777 storage
 php artisan key:generate
+config/app.phpのtimezone, localeを変更
 ```
