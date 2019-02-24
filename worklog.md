@@ -11,3 +11,9 @@ laravel new lara-d
 ```
 
 ## apache.conf書き換え
+
+## laravelセットアップ後
+```
+chmod -R 777 storage
+php artisan key:generate
+```
