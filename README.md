@@ -12,11 +12,12 @@ dockerでlamp環境構築（勉強用）
         - ~~phpからmysqlに接続可能にする~~
 - コンテナを削除してもデータが消えないように永続化する。
     - ~~data volumeを使用して永続化~~
-    - data volume conainerを使用して永続化
+    - ~~data volume conainerを使用して永続化~~
+        - data volume containerは不要っぽいので作らないことにした
 - 永続化したデータのbackup・restoreができるようにする。
-    - ホストマシンのディレクトリとマウントしている、data volume containerをマウントしたコンテナを立ち上げて、そこでtarでbackupを固めてだす（backupの取得）。
-    - そのあと、そのbackupを使用してdata volume containerを立ち上げてそのcontainerにマウントする。
-- phpMyAdminが使用できるようにする
+    - ホストマシンのディレクトリとマウントしている、data volume をマウントしたコンテナを立ち上げて、そこでtarでbackupを固めてだす（backupの取得）。
+    - そのあと、そのbackupを使用してdata volumeを復元する。
+- ~~phpMyAdminが使用できるようにする~~
 - ~~phpのversionを7系にする~~
 
 
@@ -32,3 +33,9 @@ https://akamist.com/blog/archives/648
 
 composerのhomeディレクトリとは
 https://getcomposer.org/doc/03-cli.md#composer-home
+
+volumeに関する公式doc
+https://docs.docker.com/compose/compose-file/#volumes
+
+volumeについて色々説明している
+https://higechira.hatenablog.com/entry/2017/06/01/000108
