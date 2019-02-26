@@ -13,13 +13,13 @@ dockerでlamp環境構築（勉強用）
 - コンテナを削除してもデータが消えないように永続化する。
     - ~~data volumeを使用して永続化~~
     - ~~data volume conainerを使用して永続化~~
-        - data volume containerは不要っぽいので作らないことにした
+        - ~~data volume containerは不要っぽいので作らないことにした~~
 - 永続化したデータのbackup・restoreができるようにする。
     - ホストマシンのディレクトリとマウントしている、data volume をマウントしたコンテナを立ち上げて、そこでtarでbackupを固めてだす（backupの取得）。
     - そのあと、そのbackupを使用してdata volumeを復元する。
 - ~~phpMyAdminが使用できるようにする~~
 - ~~phpのversionを7系にする~~
-
+- laravelは別プロジェクトに置いてdocker環境と分離させる
 
 ## 参考にした
 元ネタ
