@@ -19,6 +19,7 @@ dockerでlamp環境構築（勉強用）
     - そのあと、そのbackupを使用してdata volumeを復元する。
 - ~~phpMyAdminが使用できるようにする~~
 - ~~phpのversionを7系にする~~
+- phpの設定ファイルを用意してそれを読み込むようにする
 - laravelは別プロジェクトに置いてdocker環境と分離させる
 
 ## 参考にした
