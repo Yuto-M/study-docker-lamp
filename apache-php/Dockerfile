@@ -53,7 +53,7 @@ ENV COMPOSER_HOME /composer
 ENV PATH $PATH:/composer/vendor/bin
 
 # Laravel installerをインストール
-# RUN composer global require "laravel/installer"
+RUN composer global require "laravel/installer"
 
 # httpdをforegroundで動かしてコンテナが終了しないようにする
 CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
