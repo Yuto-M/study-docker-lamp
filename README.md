@@ -21,6 +21,9 @@ dockerでlamp環境構築（勉強用）
 - ~~phpのversionを7系にする~~
 - phpの設定ファイルを用意してそれを読み込むようにする
 - laravelは別プロジェクトに置いてdocker環境と分離させる
+- virtualhostを設定してドメイン名によりDocumentRootを変更する
+  - virtualhostの設定をhttpd.confではなく、各virtualhost用のファイルを作成してそこに書いて読み込むようにする。
+  - log出力先も各プロジェクト毎のディレクトリ配下に出力されるようにする。
 
 ## 参考にした
 元ネタ
@@ -40,3 +43,6 @@ https://docs.docker.com/compose/compose-file/#volumes
 
 volumeについて色々説明している
 https://higechira.hatenablog.com/entry/2017/06/01/000108
+
+version3のdocker-compose.ymlでは、gatewayの指定はなしになった
+https://qiita.com/ken992/items/e8fb65238112850ba186

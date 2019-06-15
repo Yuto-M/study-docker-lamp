@@ -11,7 +11,7 @@ RUN yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 RUN yum -y install httpd
 RUN yum -y install --enablerepo=remi,remi-php72 php php-cli php-common php-devel php-fpm php-gd php-mbstring php-mysqlnd php-pdo php-pear php-pecl-apcu php-soap php-xml php-xmlrpc php-zip
 
-RUN yum -y install zip unzip which
+RUN yum -y install zip unzip which less
 
 # composerインストール
 #Composer install
@@ -34,6 +34,12 @@ ENV PATH $PATH:/composer/vendor/bin
 RUN composer global require "laravel/installer"
 
 # httpdをforegroundで動かしてコンテナが終了しないようにする
-CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
+# CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
+
+# httpd自動起動設定
+RUN systemctl enable httpd
+
+# システム初期化
+CMD ["/sbin/init"]
 
 WORKDIR /var/www/html
