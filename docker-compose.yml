@@ -9,8 +9,9 @@ services:
         privileged: true
         volumes:
             - "./apache-php/apache.conf:/etc/httpd/conf/httpd.conf"
+            - "./apache-php/virtualhost.conf:/etc/httpd/conf.d/virtualhost.conf"
             - "./lara-d/:/var/www/html/lara-d"
-            - "./test:/var/www/html/test"
+            - "${DEVELOP}/mysql-to-json:/var/www/html/mysql-to-json"
             - "./test-ex:/var/www/html/test-ex"
         container_name: "apache-php"
     db:
