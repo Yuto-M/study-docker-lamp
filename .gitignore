@@ -1,2 +1,3 @@
 /.docker-env
 /apache-php/apache.conf
+/mysql/custom.cnf
