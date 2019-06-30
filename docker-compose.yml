@@ -19,9 +19,10 @@ services:
         env_file: .docker-env
         container_name: "mysql5.7"
         volumes:
+          - ./mysql/custom.cnf:/etc/mysql/conf.d/custom.cnf
           - lamp_db:/var/lib/mysql
     phpmyadmin:
-        image: phpmyadmin/phpmyadmin:latest
+        image: phpmyadmin/phpmyadmin:4.8.5
         links:
             - db
         ports:
