@@ -2,6 +2,12 @@
 
 # 概要
 dockerでlamp環境構築（勉強用）
+||version|
+|---|---|
+|OS|centos7.6.1810|
+|php|7.2.15|
+|mysql|5.7.25|
+|phpmyadmin|4.8.5|
 
 # 立ち上げ方
 cd study-docker-lamp
