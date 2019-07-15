@@ -1,3 +1,4 @@
-/.docker-env
-/apache-php/apache.conf
+/docker/.docker-env
+/apache/apache.conf
 /mysql/custom.cnf
+/php/php.ini

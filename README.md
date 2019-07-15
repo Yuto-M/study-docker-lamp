@@ -34,3 +34,6 @@ https://higechira.hatenablog.com/entry/2017/06/01/000108
 
 version3のdocker-compose.ymlでは、gatewayの指定はなしになった
 https://qiita.com/ken992/items/e8fb65238112850ba186
+
+php.iniの設定
+https://qiita.com/naga3/items/d1a6e8bbd0799159042e
