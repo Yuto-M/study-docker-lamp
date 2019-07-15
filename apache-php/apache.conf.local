@@ -84,7 +84,7 @@ Group apache
 # e-mailed.  This address appears on some server-generated pages, such
 # as error documents.  e.g. admin@your-domain.com
 #
-ServerAdmin root@localhost
+ServerAdmin miyakaway7@gmail.com
 
 #
 # ServerName gives the name and port that the server uses to identify itself.
@@ -100,7 +100,7 @@ ServerAdmin root@localhost
 # explicitly permit access to web content directories in other
 # <Directory> blocks below.
 #
-<Directory />
+<Directory "/">
     AllowOverride none
     Require all denied
 </Directory>
