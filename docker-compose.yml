@@ -5,7 +5,8 @@ services:
         build:
             context: ./docker
         ports:
-            - 80:80
+            - "25:25"
+            - "80:80"
         privileged: true
         volumes:
             - "./apache/apache.conf:/etc/httpd/conf/httpd.conf"
@@ -13,6 +14,7 @@ services:
             - "./php/php.ini:/etc/php.ini"
             - "${DEVELOP}/lara-d/:/var/www/html/lara-d"
             - "${DEVELOP}/mysql-to-json:/var/www/html/mysql-to-json"
+            - "${DEVELOP}/study-mail-php:/var/www/html/study-mail-php"
         container_name: "apache-php"
     db:
         image: mysql:5.7
@@ -26,7 +28,7 @@ services:
         links:
             - db
         ports:
-            - 8889:80
+            - "8889:80"
         env_file: ./docker/.docker-env
         container_name: "phpmyamin_la"
 
