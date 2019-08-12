@@ -15,6 +15,7 @@ services:
             - "${DEVELOP}/lara-d/:/var/www/html/lara-d"
             - "${DEVELOP}/mysql-to-json:/var/www/html/mysql-to-json"
             - "${DEVELOP}/study-mail-php:/var/www/html/study-mail-php"
+            - "${DEVELOP}/study-docker-lamp/basic-authentication:/var/www/html/basic-authentication"
         container_name: "apache-php"
     db:
         image: mysql:5.7

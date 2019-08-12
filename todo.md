@@ -1,11 +1,11 @@
 # TODO
-- `docker-compose up -d`でlamp環境が作成できるようにする。
-    - docker-compose.ymlを書く
+- ~~`docker-compose up -d`でlamp環境が作成できるようにする。~~
+    - ~~docker-compose.ymlを書く~~
         - ~~apacheが起動する~~
         - ~~phpが使えるようにする~~
         - ~~mysqlが起動するようにする~~
         - ~~phpからmysqlに接続可能にする~~
-- コンテナを削除してもデータが消えないように永続化する。
+- ~~コンテナを削除してもデータが消えないように永続化する。~~
     - ~~data volumeを使用して永続化~~
     - ~~data volume conainerを使用して永続化~~
         - ~~data volume containerは不要っぽいので作らないことにした~~
@@ -20,5 +20,4 @@
   - ~~virtualhostの設定をhttpd.confではなく、virtualhost設定用のファイルを作成してそこに書いて読み込むようにする。~~
   - log出力先も各プロジェクト毎のディレクトリ配下に出力されるようにする。
     - logはlog保存用のコンテナを用意してそこに吐き出したほうがいいかな。開発環境なのでいらないっちゃいらない気がするが。
-- basic認証かけたサイトを用意する
-- sslをオレオレ証明書で用意してみる
+- ~~basic認証かけたサイトを用意する~~
